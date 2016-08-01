@@ -1,20 +1,7 @@
-Summercamp 2016 VirtualBox Image
-================================
+Summercamp 2016 Workshops
+=========================
 
-VirtualBox image, with everything that is required for Summercamp 2016.
-
-## Authors
-
-- [Srdjan Vranac]
-- [Dinko Korunic]
-- [Edi Modric]
-
-## Prerequisites
-
-You need to have following installed:
-- [VirtualBox]
-
-You will also need to have hardware virtualization option activated in bios, if you have one.
+All Summercamp 2016 workshops in one place.
 
 ## Workshop Setup
 
@@ -40,16 +27,10 @@ To run it, open terminal in your running VirtualBox image, then execute
 cd /var/www/summercamp/
 ```
 
-and then you can execute
+and then you can, for example, execute
 
 ```
 ./run.sh ezsylius
 ```
 
 and only the ezsylius workshop would be installed
-
-
-[VirtualBox]: https://www.virtualbox.org/wiki/Downloads
-[Srdjan Vranac]: https://github.com/vranac
-[Dinko Korunic]: https://github.com/dkorunic
-[Edi Modric]: https://github.com/emodric
