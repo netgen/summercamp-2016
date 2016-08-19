@@ -1,0 +1,18 @@
+[submodule "workshops/phpstorm"]
+	path = workshops/phpstorm
+	url = https://github.com/pixelart/sc16-phpstorm
+[submodule "workshops/ubiquitous"]
+        path = workshops/ubiquitous
+        url = https://github.com/docteurklein/php-summercamp-ubiquitous
+[submodule "workshops/httplug"]
+        path = workshops/httplug
+        url = https://gitlab.com/dbu/http-client-workshop
+[submodule "workshops/sulu"]
+        path = workshops/sulu
+        url = https://github.com/sulu/sulu-workshop-websc16
+[submodule "workshops/api4ez"]
+        path = workshops/api4ez
+        url = https://github.com/urbanetter/practical-apis
+[submodule "workshops/headless"]
+        path = workshops/headless
+        url = https://github.com/janit/decoupling-ez 
