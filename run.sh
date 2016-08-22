@@ -55,6 +55,17 @@ function api4ez_setup() {
   )
 }
 
+# forms setup
+function forms_setup() {
+  echo "Running forms workshop setup..."
+  ( cd workshops/forms &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/forms/installation/vhost /etc/apache2/sites-enabled/forms.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 # headless setup
 function headless_setup() {
   echo "Running headless workshop setup..."
@@ -82,6 +93,7 @@ function all() {
   httplug_setup
   sulu_setup
   api4ez_setup
+  forms_setup
 }
 
 echo "Running github token setup..."
