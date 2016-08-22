@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# oop setup
+# phpstorm setup
 function phpstorm_setup() {
   echo "Running phpstorm workshop setup..."
   ( cd workshops/phpstorm &&
@@ -79,7 +79,9 @@ function headless_setup() {
 
 
 function all() {
-  phpstorm_setup
+  httplug_setup
+  sulu_setup
+  api4ez_setup
 }
 
 echo "Running github token setup..."
