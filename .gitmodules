@@ -13,3 +13,9 @@
 [submodule "workshops/headless"]
 	path = workshops/headless
 	url = https://github.com/janit/decoupling-ez.git
+[submodule "workshops/sylius"]
+	path = workshops/sylius
+	url = https://github.com/dantleech/wsc-2016.git
+[submodule "workshops/sylius-handouts"]
+	path = workshops/sylius
+	url = https://github.com/dantleech/wsc-2016-handouts.git
