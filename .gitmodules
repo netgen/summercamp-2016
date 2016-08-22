@@ -19,3 +19,6 @@
 [submodule "workshops/sylius-handouts"]
 	path = workshops/sylius-handouts
 	url = https://github.com/dantleech/wsc-2016-handouts.git
+[submodule "workshops/forms"]
+	path = workshops/forms
+	url = https://github.com/webmozart/symfony-forms-workshop-websc16.git
