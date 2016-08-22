@@ -77,16 +77,16 @@ function headless_setup() {
   )
 }
 
-# ezsylius setup
-#function ezsylius_setup() {
-#  echo "Running ezsylius workshop setup..."
-#  ( cd workshops/ezpublish-community-sylius &&
-#    git checkout sylius_integration &&
-#    git pull origin sylius_integration &&
-#    sudo ln -sf /var/www/summercamp/workshops/ezpublish-community-sylius/installation/vhost /etc/apache2/sites-enabled/ezsylius.conf &&
-#    sudo sh ./installation/run.sh
-#  )
-#}
+# sylius setup
+function sylius_setup() {
+  echo "Running sylius workshop setup..."
+  ( cd workshops/sylius &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/sylius/installation/vhost /etc/apache2/sites-enabled/sylius.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
 
 
 function all() {
