@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# fieldtypes setup
+function fieldtypes_setup() {
+  echo "Running fieldtypes workshop setup..."
+  ( cd workshops/fieldtypes &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/fieldtypes/installation/vhost /etc/apache2/sites-enabled/fieldtypes.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 # phpstorm setup
 function phpstorm_setup() {
   echo "Running phpstorm workshop setup..."
@@ -90,6 +101,7 @@ function sylius_setup() {
 
 
 function all() {
+  fieldtypes_setup
   httplug_setup
   sulu_setup
   api4ez_setup

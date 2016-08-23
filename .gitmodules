@@ -22,3 +22,6 @@
 [submodule "workshops/forms"]
 	path = workshops/forms
 	url = https://github.com/webmozart/symfony-forms-workshop-websc16.git
+[submodule "workshops/fieldtypes"]
+	path = workshops/fieldtypes
+	url = https://github.com/hknezevic/fieldtypes-websc2016.git
