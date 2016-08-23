@@ -99,6 +99,15 @@ function sylius_setup() {
   )
 }
 
+# sylius-handouts setup
+function sylius_handouts_setup() {
+  echo "Running sylius handouts workshop setup..."
+  ( cd workshops/sylius-handouts &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/sylius-handouts/installation/vhost /etc/apache2/sites-enabled/sylius-handouts.conf
+  )
+}
 
 function all() {
   fieldtypes_setup
@@ -106,6 +115,8 @@ function all() {
   sulu_setup
   api4ez_setup
   forms_setup
+  sylius_setup
+  sylius_handouts
 }
 
 echo "Running github token setup..."
