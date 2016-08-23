@@ -94,7 +94,6 @@ function sylius_setup() {
   ( cd workshops/sylius &&
     git checkout master &&
     git pull origin master &&
-    sudo ln -sf /var/www/summercamp/workshops/sylius/installation/vhost /etc/apache2/sites-enabled/sylius.conf &&
     sudo sh ./installation/run.sh
   )
 }
