@@ -119,6 +119,17 @@ function lightning_setup() {
   )
 }
 
+# nofw setup
+function nofw_setup() {
+  echo "Running nofw workshop setup..."
+  ( cd workshops/nofw &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/nofw/installation/vhost /etc/apache2/sites-enabled/nofw.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -128,6 +139,7 @@ function all() {
   sylius_setup
   sylius_handouts_setup
   lightning_setup
+  nofw_setup
 }
 
 echo "Running github token setup..."

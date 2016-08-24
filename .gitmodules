@@ -28,3 +28,6 @@
 [submodule "workshops/lightning"]
 	path = workshops/lightning
 	url = https://github.com/jakzal/websc-workshop-2016.git
+[submodule "workshops/nofw"]
+	path = workshops/nofw
+	url = https://github.com/Swader/nofw.websc.git
