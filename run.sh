@@ -108,6 +108,17 @@ function sylius_handouts_setup() {
   )
 }
 
+# lightning setup
+function lightning_setup() {
+  echo "Running lightning workshop setup..."
+  ( cd workshops/lightning &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/lightning/installation/vhost /etc/apache2/sites-enabled/lightning.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -115,7 +126,8 @@ function all() {
   api4ez_setup
   forms_setup
   sylius_setup
-  sylius_handouts
+  sylius_handouts_setup
+  lightning_setup
 }
 
 echo "Running github token setup..."
