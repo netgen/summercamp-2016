@@ -146,7 +146,6 @@ function ubiquitous_setup() {
   ( cd workshops/ubiquitous &&
     git checkout master &&
     git pull origin master &&
-    sudo ln -sf /var/www/summercamp/workshops/ubiquitous/installation/vhost /etc/apache2/sites-enabled/ubiquitous.conf &&
     sudo sh ./installation/run.sh
   )
 }
@@ -162,6 +161,7 @@ function all() {
   lightning_setup
   headless_setup
   oop_setup
+  ubiquitous_setup
 }
 
 echo "Running github token setup..."
