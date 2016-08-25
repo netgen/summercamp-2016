@@ -31,3 +31,6 @@
 [submodule "workshops/nofw"]
 	path = workshops/nofw
 	url = https://github.com/Swader/nofw.websc.git
+[submodule "workshops/oop"]
+	path = workshops/oop
+	url = https://github.com/Djeg/webscamp-noext-game.git

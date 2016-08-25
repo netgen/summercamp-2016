@@ -130,6 +130,16 @@ function nofw_setup() {
   )
 }
 
+# oop setup
+function oop_setup() {
+  echo "Running oop workshop setup..."
+  ( cd workshops/oop &&
+    git checkout master &&
+    git pull origin master &&
+    sudo sh ./bin/setup
+  )
+}
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -140,6 +150,7 @@ function all() {
   sylius_handouts_setup
   lightning_setup
   headless_setup
+  oop_setup
 }
 
 echo "Running github token setup..."
