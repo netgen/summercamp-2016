@@ -139,7 +139,7 @@ function all() {
   sylius_setup
   sylius_handouts_setup
   lightning_setup
-  nofw_setup
+  headless_setup
 }
 
 echo "Running github token setup..."
