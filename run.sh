@@ -149,6 +149,16 @@ function ubiquitous_setup() {
   )
 }
 
+# rabbitmq setup
+function rabbitmq_setup() {
+  echo "Running rabbitmq workshop setup..."
+  ( cd workshops/rabbitmq &&
+    git checkout master &&
+    git pull origin master &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -162,6 +172,7 @@ function all() {
   oop_setup
   ubiquitous_setup
   nofw_setup
+  rabbitmq_setup
 }
 
 echo "Running github token setup..."
