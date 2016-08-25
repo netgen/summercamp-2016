@@ -140,6 +140,17 @@ function oop_setup() {
   )
 }
 
+# ubiquitous setup
+function ubiquitous_setup() {
+  echo "Running ubiquitous workshop setup..."
+  ( cd workshops/ubiquitous &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/ubiquitous/installation/vhost /etc/apache2/sites-enabled/ubiquitous.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
 function all() {
   fieldtypes_setup
   httplug_setup

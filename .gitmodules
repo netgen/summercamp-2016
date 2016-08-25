@@ -34,3 +34,6 @@
 [submodule "workshops/oop"]
 	path = workshops/oop
 	url = https://github.com/Djeg/webscamp-noext-game.git
+[submodule "workshops/ubiquitous"]
+	path = workshops/ubiquitous
+	url = https://github.com/docteurklein/php-summercamp-ubiquitous.git
