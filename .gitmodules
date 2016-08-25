@@ -37,6 +37,6 @@
 [submodule "workshops/ubiquitous"]
 	path = workshops/ubiquitous
 	url = https://github.com/docteurklein/php-summercamp-ubiquitous.git
-[submodule "workshops/rabittmq"]
-	path = workshops/rabittmq
+[submodule "workshops/rabbitmq"]
+	path = workshops/rabbitmq
 	url = https://github.com/vranac/sc16-rabbid-rabbits.git
