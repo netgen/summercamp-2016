@@ -40,3 +40,6 @@
 [submodule "workshops/rabbitmq"]
 	path = workshops/rabbitmq
 	url = https://github.com/vranac/sc16-rabbid-rabbits
+[submodule "workshops/ezplatform"]
+	path = workshops/ezplatform
+	url = https://github.com/DavidLiedle/2016-croatia-web-summer-camp-intro.git

@@ -159,6 +159,18 @@ function rabbitmq_setup() {
   )
 }
 
+# ezplatform setup
+function ezplatform_setup() {
+  echo "Running ezplatform workshop setup..."
+  ( cd workshops/ezplatform &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/ezplatform/installation/vhost /etc/apache2/sites-enabled/ezplatform.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -173,6 +185,7 @@ function all() {
   ubiquitous_setup
   nofw_setup
   rabbitmq_setup
+  ezplatform_setup
 }
 
 echo "Running github token setup..."
