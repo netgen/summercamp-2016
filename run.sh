@@ -125,8 +125,7 @@ function nofw_setup() {
   ( cd workshops/nofw &&
     git checkout master &&
     git pull origin master &&
-    sudo ln -sf /var/www/summercamp/workshops/nofw/installation/vhost /etc/apache2/sites-enabled/nofw.conf &&
-    sudo sh ./installation/run.sh
+    sudo ln -sf /var/www/summercamp/workshops/nofw/installation/vhost /etc/apache2/sites-enabled/nofw.conf
   )
 }
 
@@ -162,6 +161,7 @@ function all() {
   headless_setup
   oop_setup
   ubiquitous_setup
+  nofw_setup
 }
 
 echo "Running github token setup..."
