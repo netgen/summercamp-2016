@@ -185,6 +185,7 @@ function all() {
   nofw_setup
   rabbitmq_setup
   ezplatform_setup
+  phpstorm_setup
 }
 
 echo "Running github token setup..."
