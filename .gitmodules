@@ -43,3 +43,6 @@
 [submodule "workshops/ezplatform"]
 	path = workshops/ezplatform
 	url = https://github.com/DavidLiedle/2016-croatia-web-summer-camp-intro.git
+[submodule "workshops/deploy"]
+	path = workshops/deploy
+	url = https://github.com/kaliop-uk/websummercamp2016.git
