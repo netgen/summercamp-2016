@@ -18,7 +18,7 @@ function phpstorm_setup() {
     git checkout master &&
     git pull origin master &&
     sudo ln -sf /var/www/summercamp/workshops/phpstorm/installation/vhost /etc/apache2/sites-enabled/phpstorm.conf &&
-    sudo sh ./installation/run.sh
+    sh ./installation/run.sh
   )
 }
 
