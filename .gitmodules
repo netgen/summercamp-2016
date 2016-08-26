@@ -46,3 +46,6 @@
 [submodule "workshops/deploy"]
 	path = workshops/deploy
 	url = https://github.com/kaliop-uk/websummercamp2016.git
+[submodule "workshops/docker"]
+	path = workshops/docker
+	url = https://github.com/mareg/websc16-docker-workshop.git
