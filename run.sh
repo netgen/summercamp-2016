@@ -170,6 +170,18 @@ function ezplatform_setup() {
 }
 
 
+# ezplatformui setup
+function ezplatformui_setup() {
+  echo "Running ezplatformui workshop setup..."
+  ( cd workshops/ezplatformui &&
+    git checkout master &&
+    git pull origin master &&
+    sudo ln -sf /var/www/summercamp/workshops/ezplatformui/installation/vhost /etc/apache2/sites-enabled/ezplatformui.conf &&
+    sudo sh ./installation/run.sh
+  )
+}
+
+
 function all() {
   fieldtypes_setup
   httplug_setup
@@ -185,6 +197,7 @@ function all() {
   nofw_setup
   rabbitmq_setup
   ezplatform_setup
+  ezplatformui_setup
   phpstorm_setup
 }
 

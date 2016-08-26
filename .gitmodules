@@ -49,3 +49,6 @@
 [submodule "workshops/docker"]
 	path = workshops/docker
 	url = https://github.com/mareg/websc16-docker-workshop.git
+[submodule "workshops/ezplatformui"]
+	path = workshops/ezplatformui
+	url = https://github.com/sunpietro/wsc-2016-studio-demo.git
